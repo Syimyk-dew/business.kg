@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { IoIosArrowDown, IoMdPin } from "react-icons/io";
 
 function Header2() {
-    const [regionOpen, setRegionOpen] = useState(false); // Регион тандоо абалы
-    const [selectedRegion, setSelectedRegion] = useState("Любой регион"); // Тандалган регион
+    const [regionOpen, setRegionOpen] = useState(false); 
+    const [selectedRegion, setSelectedRegion] = useState("Любой регион");
 
     const toggleRegionSelect = () => {
         setRegionOpen(!regionOpen);
     };
 
     const selectRegion = (region) => {
-        setSelectedRegion(region); // Тандалган регионду жаңыртуу
-        setRegionOpen(false); // Менюну жабуу
+        setSelectedRegion(region); 
+        setRegionOpen(false);
     };
 
     return (
@@ -26,7 +26,6 @@ function Header2() {
                         <a href="">Рекломодателям</a>
                     </div>
 
-                    {/* Регион тандоо */}
                     <div className='header2-reg'>
                         <div className="region-selector">
                             <div className="region-display" onClick={toggleRegionSelect}>

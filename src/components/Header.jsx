@@ -5,8 +5,8 @@ import { IoAddCircleOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false); // Меню абалы (ачык/жабык)
-  const [selectedLanguage, setSelectedLanguage] = useState("RU"); // Тандалган тил
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("RU"); 
 
   const toggleSelect = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ function Header() {
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
-    setIsOpen(false); // Меню жабылат
+    setIsOpen(false);
   };
 
   return (

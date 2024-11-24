@@ -16,8 +16,8 @@ function Recomen() {
     });
 
     return (
-        <div id='recomen' style={{ padding: '2rem 0', backgroundColor: '#f8f9fa' }}>
-            <div className='container' style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px' }}>
+        <div id='recomen'>
+            <div className='container'>
                 <div className='recomen'>
                     <div style={{ 
                         display: 'flex', 
